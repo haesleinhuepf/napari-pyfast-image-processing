@@ -7,26 +7,28 @@
 [![codecov](https://codecov.io/gh/haesleinhuepf/napari-pyfast-image-processing/branch/main/graph/badge.svg)](https://codecov.io/gh/haesleinhuepf/napari-pyfast-image-processing)
 [![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/napari-pyfast-image-processing)](https://napari-hub.org/plugins/napari-pyfast-image-processing)
 
-Use pyfast 's CPU/GPU-accelerated image processing from within napari
+Use pyFAST's CPU/GPU-accelerated image processing from within napari
 
 ----------------------------------
 
 This [napari] plugin was generated with [Cookiecutter] using [@napari]'s [cookiecutter-napari-plugin] template.
 
-<!--
-Don't miss the full getting started guide to set up your new package:
-https://github.com/napari/cookiecutter-napari-plugin#getting-started
-
-and review the napari docs for plugin developers:
-https://napari.org/plugins/stable/index.html
--->
 
 ## Installation
 
-You can install `napari-pyfast-image-processing` via [pip]:
+First make sure that the requirements of FAST are [installed as described here](https://fast.eriksmistad.no/requirements.html).
 
-    pip install napari-pyfast-image-processing
+On MacOS this can be done by running these commands from the command line:
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/opt/homebrew/bin/brew install openslide libomp
+```
 
+Independent from the operating system, you can install `napari-pyfast-image-processing` via [pip] afterwards:
+
+```
+pip install napari-pyfast-image-processing
+```
 
 
 To install latest development version :
