@@ -29,14 +29,18 @@ On MacOS this can be done by running these commands from the command line:
 
 Afterwards, you can install `napari-pyfast-image-processing` via [pip]:
 
+<!--
 ```
 pip install napari-pyfast-image-processing
 ```
 
 
 To install latest development version :
+-->
 
-    pip install git+https://github.com/haesleinhuepf/napari-pyfast-image-processing.git
+```
+pip install git+https://github.com/haesleinhuepf/napari-pyfast-image-processing.git
+```
 
 
 ## Contributing
