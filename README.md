@@ -1,4 +1,4 @@
-# napari-pyfast-image-processing
+# napari-pyfast-image-processing (npyFAST)
 
 [![License](https://img.shields.io/pypi/l/napari-pyfast-image-processing.svg?color=green)](https://github.com/haesleinhuepf/napari-pyfast-image-processing/raw/main/LICENSE)
 [![PyPI](https://img.shields.io/pypi/v/napari-pyfast-image-processing.svg?color=green)](https://pypi.org/project/napari-pyfast-image-processing)
@@ -7,7 +7,8 @@
 [![codecov](https://codecov.io/gh/haesleinhuepf/napari-pyfast-image-processing/branch/main/graph/badge.svg)](https://codecov.io/gh/haesleinhuepf/napari-pyfast-image-processing)
 [![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/napari-pyfast-image-processing)](https://napari-hub.org/plugins/napari-pyfast-image-processing)
 
-Use pyFAST's CPU/GPU-accelerated image processing from within napari
+Use [pyFAST's](https://fast.eriksmistad.no) CPU/GPU-accelerated image processing from within napari. 
+Available functions are yet limited to some simple operations such as `gaussian_blur, image_gradient, laplacian_of_gaussian_2D, image_sharpening_2D, dilation, erosion`.
 
 ----------------------------------
 
@@ -18,13 +19,15 @@ This [napari] plugin was generated with [Cookiecutter] using [@napari]'s [cookie
 
 First make sure that the requirements of FAST are [installed as described here](https://fast.eriksmistad.no/requirements.html).
 
+<!--
 On MacOS this can be done by running these commands from the command line:
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 /opt/homebrew/bin/brew install openslide libomp
 ```
+-->
 
-Independent from the operating system, you can install `napari-pyfast-image-processing` via [pip] afterwards:
+Afterwards, you can install `napari-pyfast-image-processing` via [pip]:
 
 ```
 pip install napari-pyfast-image-processing
